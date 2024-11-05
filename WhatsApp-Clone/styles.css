@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a2634;
+    color: #e0e0e0;
+}
+
+#background-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.sidebar header {
+    font-size: 1.8rem;
+    padding: 15px;
+    border: 2px solid #4a5562;
+    margin: 10px;
+    border-radius: 0.8rem;
+    background-color: #2a3a4a;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+#landing-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+#landing-page h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#landing-page p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: #00a884;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #008c6f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+#chat-page {
+    display: none;
+    width: 100%;
+}
+
+.sidebar {
+    width: 30%;
+    background-color: #2a3a4a;
+    border-right: 1px solid #3f4448;
+    overflow-y: auto;
+}
+
+.chat-list img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.chat-item {
+    padding: 15px;
+    border-bottom: 1px solid #3f4448;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+}
+
+.chat-item:hover {
+    background-color: #3a4a5a;
+}
+.main-chat {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background-color: #2a3a4a;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chat-header img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.chat-messages {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.message {
+    max-width: 70%;
+    margin-bottom: 15px;
+    padding: 12px 15px;
+    border-radius: 12px;
+    position: relative;
+    line-height: 1.4;
+}
+
+.received {
+    background-color: #2a3a4a;
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+}
+
+.sent {
+    background-color: #054740;
+    align-self: flex-end;
+    margin-left: auto;
+    border-bottom-right-radius: 0;
+}
+
+.chat-input {
+    background-color: #2a3a4a;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chat-input input {
+    flex-grow: 1;
+    background-color: #3f4a5a;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 25px;
+    color: #e9edef;
+    font-size: 1rem;
+}
+
+.chat-input button {
+    background-color: #00a884;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: white;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chat-input button:hover {
+    background-color: #008c6f;
+}
+
+
+button {
+    --color: #3091ff;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    width: 6em;
+    height: 2.6em;
+    line-height: 2.5em;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 6px;
+    position: relative;
+    
+  }
+  
+  button::before {
+    position: absolute;
+    content: "";
+    background-color: #6dc5b2
+    ;
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+  }
+  
+  button:hover {
+    color: rgb(255, 255, 255);
+  }
+  
+  button:before {
+    top: 100%;
+    left: 100%;
+    transition: 0.3s all;
+  }
+  
+  button:hover::before {
+    top: -30px;
+    left: -30px;
+  }
+

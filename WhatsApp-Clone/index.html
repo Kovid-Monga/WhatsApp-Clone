@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="background-canvas"></canvas>
+    <div id="landing-page">
+        <h1>Welcome to WhatsApp Clone</h1>
+        <p>Experience chatting with a stunning 3D background</p>
+        <button id="enter-chat-btn" class="bt">Enter Chat</button> 
+
+    </div>
+    <div id="chat-page" class="container">
+        <div class="sidebar">
+            <header >Chat List</header>
+            <ul class="chat-list">
+                <li class="chat-item"><img src="bg.jpg" alt="">Alice</li>
+                <li class="chat-item">Bob</li>
+                <li class="chat-item">Charlie</li>
+                <li class="chat-item">David</li>
+                <li class="chat-item">Eve</li>
+            </ul>
+        </div>
+        <div class="main-chat">
+            <div class="chat-header">
+                <img src="https://via.placeholder.com/40" alt="Profile Picture">
+                <span>Alice</span>
+            </div>
+            <div class="chat-messages" id="chat-messages">
+                <div class="message received">Hey, how are you?</div>
+                <div class="message sent">I'm good, thanks! How about you?</div>
+                <div class="message received">Doing great! Any plans for the weekend?</div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Type a message">
+                <button id="send-button"><img src="image.png" alt=""></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
